@@ -31,7 +31,8 @@ def modelo_por_patente():
         auto = str(auto).strip("<p>")
         auto = auto.strip("</p>")
         info_auto.append(auto)
-    print("\nMARCA: " + info_auto[1] + "\nMODELO: " + info_auto[2] + "\nAÑO: " + info_auto[3] + "\nMOTOR: " + info_auto[4] + "\nCHASIS: " + info_auto[5])
+    #print(info_auto[10])
+    print("\nMARCA: " + info_auto[7] + "\nMODELO: " + info_auto[8] + "\nAÑO: " + info_auto[9] + "\nMOTOR: " + info_auto[10] + "\nCHASIS: " + info_auto[11])
     input()
     main()   
 
