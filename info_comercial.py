@@ -23,6 +23,11 @@ def link_chileautos():
 
 def modelo_por_patente():
     patente = input("Ingrese patente: ")
+    #limpiando patente
+    borrando=["-", " ", "-", "_", ".", "*",]
+    for i in borrando:
+        patente=patente.replace(i, "")
+        
     url = "https://permisodecirculacion.cl/home/?p=" + patente
     source = urllib.request.urlopen(url)
     soup = BeautifulSoup(source, "html.parser")
